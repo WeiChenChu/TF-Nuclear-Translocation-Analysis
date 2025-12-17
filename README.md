@@ -52,7 +52,7 @@ The analysis consists of **two sequential Python scripts**, each operating on th
 
 ### Part I — Label Filtering
 
-**Script:** `PartI_label_filtering.ipynb`
+**Script:** `Part_I_label_filtering.ipynb`
 
 Purpose:
 
