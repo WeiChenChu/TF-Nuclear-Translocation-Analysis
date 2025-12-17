@@ -100,7 +100,7 @@ Cells are excluded if **any** of the following conditions are met:
 
 #### Nuclear Translocation Index
 
-* A **nuclear-localization event** is defined using a ratio threshold (default: **1.65**)
+* A **nuclear-localization event** is defined using a ratio threshold (default: **2.25**)
 * This value corresponds to the **mean unstressed nuclearization ratio** in the reference condition
 * The final index summarizes the frequency and magnitude of nuclear translocation events for quantitative strain comparison
 
@@ -136,7 +136,7 @@ filter_label_pattern = "_filtered_label.tif"
 
 # Parameters
 intensity_threshold_percentile = 90  # Mean intensity outlier threshold
-nuclearization_threshold = 1.65      # Threshold for nuclear localization event
+nuclearization_threshold = 2.25      # Threshold for nuclear localization event
 ```
 
 Modify these parameters if applying the pipeline to different reporters, imaging conditions, or experimental designs.
