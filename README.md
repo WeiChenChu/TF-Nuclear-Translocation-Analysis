@@ -69,7 +69,7 @@ Outcome:
 
 ### Part II — Nuclearization Ratio Calculation and Indexing
 
-**Script:** `nuclearization_ratio_calculation.ipynb`
+**Script:** `Part_II_nuclearization_ratio_calculation.ipynb`
 
 Purpose:
 
@@ -110,14 +110,22 @@ Cells are excluded if **any** of the following conditions are met:
 
 ## ▶️ Usage
 
-### 1. Configure Input and Output Paths
+### 1. Configure Input, Output Paths and naming patterns for images and labels
 
 Edit the script to define your data locations:
 
 ```python
+
+# Define the directory path containing the images
 image_directory = r'D:\Your\Path\To\Intensity\Images'
 label_directory = r'D:\Your\Path\To\Label\Images'
 output_directory = r'D:\Your\Path\To\Output\Results'
+
+# Define the specific naming patterns for images and labels
+image_pattern = "_intensity.tif"
+filter_label_pattern = "_filtered_label.tif"
+
+
 ```
 
 ---
@@ -125,6 +133,8 @@ output_directory = r'D:\Your\Path\To\Output\Results'
 ### 2. Adjust Key Parameters
 
 ```python
+
+# Parameters
 intensity_threshold_percentile = 90  # Mean intensity outlier threshold
 nuclearization_threshold = 1.65      # Threshold for nuclear localization event
 ```
